@@ -11,12 +11,10 @@ from xlrd import open_workbook
 path3 = 'C://Users//MMCS 9//Desktop//test.xlsx'
 path4 = 'C://Users//MMCS 9//Desktop//w.xlsx'
 
-df = pd.read_excel(path3) #Read Excel file as a DataFrame
+df = pd.read_excel(path3)
 df['Empty'] = ''
-#Display top 5 rows to check if everything looks good
 df.head(5)
-#To save it back as Excel
-df.to_excel(path3) #Write DateFrame back as Excel file
+df.to_excel(path3)
 
 Date = ''
 Name = ''
@@ -48,3 +46,7 @@ writer = ExcelWriter(path4)
 
 df.to_excel(writer, 'Sheet1', index=False)
 writer.save()
+
+# Command to create .exe file
+# pip install pyinstaller
+# pyinstaller -w [file_name]
