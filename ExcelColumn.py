@@ -8,24 +8,6 @@ from xlsxwriter.workbook import Workbook
 from tabula import convert_into
 from xlrd import open_workbook
 
-'''
-Path1 = 'C://FASINFO//temp//SaTemp_pdf//HDFCstatement.pdf'
-path2 = 'C://FASINFO//temp//SaTemp_pdf//test.csv'
-
-convert_into(Path1, path2, output_format="csv", pages="all")
-
-workbook = Workbook('C://FASINFO//temp//SaTemp_pdf//test.xlsx', {'strings_to_numbers': True, 'constant_memory': True})
-for csvfile in glob('C://FASINFO//temp//SaTemp_pdf//*.csv'):
-    name = os.path.basename(csvfile).split('.')[-2]
-    worksheet = workbook.add_worksheet()
-    with open(csvfile, 'r') as f:
-        r = csv.reader(f)
-        for row_index, row in enumerate(r):
-            for col_index, data in enumerate(row):
-                worksheet.write(row_index, col_index, data)
-workbook.close()
-'''
-
 path3 = 'C://Users//MMCS 9//Desktop//test.xlsx'
 path4 = 'C://Users//MMCS 9//Desktop//w.xlsx'
 
